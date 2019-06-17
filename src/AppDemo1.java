@@ -10,6 +10,7 @@ public class AppDemo1 {
 		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") + "\\resources\\drivers\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://login.salesforce.com/");
+		System.out.println("This is change");
 		driver.manage().window().maximize();
 		driver.findElement(By.id("username")).sendKeys("angel@gmail.com");
 		driver.findElement(By.name("pw")).sendKeys("loveu123");
